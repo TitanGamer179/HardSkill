@@ -51,21 +51,6 @@ Interface interativa de linha de comandos para os clientes do restaurante. Permi
 python -m venv .venv
 ```
 
-**Windows (PowerShell):**
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-**Windows (CMD):**
-```cmd
-.\.venv\Scripts\activate.bat
-```
-
-**macOS / Linux:**
-```bash
-source .venv/bin/activate
-```
-
 ### 2. Instalar dependências
 
 ```bash
@@ -80,9 +65,7 @@ O sistema requer **dois terminais** a correr em simultâneo.
 
 ### Terminal 1 — Iniciar o Servidor
 
-```bash
 uvicorn main:app --reload
-```
 
 O servidor ficará disponível em `http://127.0.0.1:8000`.
 
@@ -90,13 +73,10 @@ O servidor ficará disponível em `http://127.0.0.1:8000`.
 
 ### Terminal 2 — Iniciar o Cliente CLI
 
-```bash
 python restaurant.py
-```
 
 Siga as instruções no ecrã para navegar pelo menu e efetuar pedidos.
 
----
 
 ## Exemplo de Utilização
 
